@@ -1,6 +1,3 @@
-### win-provision.tf 파일 내용
- 
- 
 ## Softlayer 접속 정보
 provider "ibm" {
     softlayer_api_key = "<API Key>"
@@ -9,8 +6,8 @@ provider "ibm" {
  
  
 ## 생성 VM 정보(스펙)
-resource "ibm_compute_vm_instance" "win-provision" {
-    hostname = "win-provision2"
+resource "ibm_compute_vm_instance" "vm-provisioning" {
+    hostname = "vm-provisioning"
     domain = "sk.com"
     os_reference_code = "WIN_2012-STD-R2_64"
     datacenter = "seo01"
